@@ -17,7 +17,7 @@ export default class Session implements vs.Disposable {
     context.subscriptions.push(vs.commands.registerTextEditorCommand(Command["input-assist"].acceptSelectedSuggestionOnSpace, async (editor) => {
       await vs.commands.executeCommand(Command.vscode.acceptSelectedSuggestionOnEnter);
       const list = await vs.commands.executeCommand<vs.CompletionList>(Command.vscode.executeCompletionItemProvider, editor.document.uri, editor.selection.active);
-      if (list.isIncomplete) {
+      if (list != undefined && list.isIncomplete) {
         await vs.commands.executeCommand(Command["input-assist"].Method.continueCompleting);
       } else {
         await editor.edit((edit) => edit.insert(editor.selection.active, " "));
