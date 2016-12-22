@@ -1,4 +1,6 @@
-# vscode-input-assist
+# vscode-input-assist-lean
+
+### Note: this is a temporary fork for use in the Lean language mode.
 
 Tree-based input assistance for unicode and more in Visual Studio Code
 

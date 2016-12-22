@@ -1,17 +1,17 @@
 {
   "private": true,
-  "name": "input-assist",
-  "displayName": "Input Assist",
+  "name": "input-assist-lean",
+  "displayName": "Input Assist (Lean)",
   "description": "Tree-based input assistance for unicode and more in Visual Studio Code",
   "version": "0.0.6",
-  "publisher": "freebroccolo",
+  "publisher": "jroesch",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/freebroccolo/vscode-input-assist/issues"
+    "url": "https://github.com/jroesch/vscode-input-assist/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/freebroccolo/vscode-input-assist.git"
+    "url": "https://github.com/jroesch/vscode-input-assist.git"
   },
   "engines": {
     "vscode": "^1.5.0"
@@ -28,7 +28,7 @@
     "configuration": {
       "title": "Input Assist configuration",
       "properties": {
-        "agda-input.languages": {
+        "input-assist.languages": {
           "oneOf": [
             {
               "type": "null"
